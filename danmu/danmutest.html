@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			danmu {
+				width: auto;
+				/*height: 30px;*/
+				border: solid 1px gray;
+				border-radius: 6px;
+				padding: 5px;
+				font-weight: bold;
+				opacity: 0.8;
+				font-family: "微软雅黑";
+				color: red;
+				font-size: 20px;
+				line-height: 30px;
+				position: absolute;
+				right: 100%;
+				top: 20px;
+				white-space: nowrap;
+			}
+			
+			danmu:after {
+				content: ".";
+				display: block;
+				height: 0;
+				clear: both;
+				visibility: hidden;
+			}
+			
+			#mainVideo {
+				width: 640px;
+				height: 320px;
+				background-color: deepskyblue;
+				position: absolute;
+				left: 200px;
+				/*overflow: hidden;*/
+			}
+		</style>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/danmu.js"></script>
+	</head>
+
+	<body>
+		<div id="mainVideo">
+			<danmu id="danmu1"><span>大家好,我是1</span></danmu>
+			<!--<danmu id="danmu2" style="top: 60px;">大家好,我是2</danmu>-->
+		</div>
+
+	</body>
+
+</html>
